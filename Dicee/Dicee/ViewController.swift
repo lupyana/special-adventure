@@ -19,9 +19,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        rollDice()
     }
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
+      rollDice()
+    }
+    
+    func rollDice() {
         randomDiceIndex1 = Int.random(in: 1 ... 6)
         randomDiceIndex2 = Int.random(in: 1 ... 6)
         
